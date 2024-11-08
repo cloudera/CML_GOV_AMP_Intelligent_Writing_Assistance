@@ -25,6 +25,10 @@ tasks:
     environment:
       TASK_TYPE: CREATE/RUN_JOB
 
+  - type: run_job
+    entity_label: install_dependencies
+    short_summary: Run job to install dependencies
+
   - type: start_application
     short_summary: Starting streamlit application
     name: Intelligent Writing Assistance with Text Style Transfer
