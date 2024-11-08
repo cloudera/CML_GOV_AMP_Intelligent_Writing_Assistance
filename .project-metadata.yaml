@@ -17,7 +17,7 @@ tasks:
     name: Install Dependencies
     script: scripts/install_dependencies.py
     cpu: 2
-    memory: 4
+    memory: 8
 
   - type: start_application
     short_summary: Starting streamlit application
