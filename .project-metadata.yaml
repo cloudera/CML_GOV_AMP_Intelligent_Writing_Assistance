@@ -13,11 +13,17 @@ runtimes:
     edition: GovCloud
 
 tasks:
-  - type: run_session
+  - type: create_job
     name: Install Dependencies
+    entity_label: install_dependencies
     script: scripts/install_dependencies.py
+    arguments: None
+    short_summary: Create job to install dependencies
+    long_summary: Create job to install dependencies
     cpu: 2
     memory: 12
+    environment:
+      TASK_TYPE: CREATE/RUN_JOB
 
   - type: start_application
     short_summary: Starting streamlit application
